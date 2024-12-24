@@ -1,0 +1,254 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    height: 55px;
+    background-color: rgba(66, 77, 51, 0.219);
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .logos h1{
+    height: 30px;
+    color: white;
+    font-family: cursive;
+}
+
+
+nav ul{
+    gap: 20px;
+    justify-content: center;
+    display: flex;
+ 
+}
+
+nav{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+li{
+    cursor: pointer;
+    font-size:25px;
+    list-style: none;
+    font-family: monospace;
+    color: white;
+}
+
+header button{
+        width: 130px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: rgb(3, 110, 3);
+        color: white;
+        font-size: 15px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+    
+    button:hover{
+        transform: translateY(-8px);
+        background-color: rgb(122, 204, 45);
+    }
+
+
+.container{
+    height:auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.left{
+    padding: 100px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+.button {
+    width: 150px;
+    height: 50px;
+    border: 2px solid #07690c;
+    text-align: center;
+    align-content: center;
+font-size: 16px;
+    background-color: transparent; 
+    color: #07690c;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #07690c; 
+    color: white; 
+}
+
+button {
+    background-color: #07690c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+button:hover {
+    color: #ecf0f1;
+}
+
+
+.right img{
+    height: 28rem;
+    /* width: 50%; */
+    align-items: center;
+    justify-content: center;
+}
+
+
+.right{
+    width: 50%;
+    height: 100vh;
+    background-image: url('img/full-length-portrait-young-smiling-african-man.png');
+    background-size: cover;
+}
+h2{
+padding-left: 5px;
+font-size: 35px;
+font-family: monospace;
+color: white;
+}
+
+.h2{
+    gap: 14px;
+    display: flex;
+}
+
+h1{
+    font-size: 45px;
+    font-family: cursive;
+    color: green;
+}
+
+p{
+color: white;
+font-size: 20px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo img{
+    height: 50px;
+    margin-top: 25px;
+    border-radius: 80px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+
+@media (max-width: 1000px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    li {
+        font-size: 15px;
+    }
+
+    header button {
+        width: 120px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    nav ul{
+        gap: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        display: flex;
+        height: auto;
+    }
+
+    .left {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        height: auto;
+        align-items: center;
+    }
+
+    .left h2 {
+        font-size: 28px;
+    }
+
+    .left h1 {
+        font-size: 35px;
+    }
+
+    .left p {
+        font-size: 16px;
+    }
+
+    .buttons {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .button, button {
+        width: 120px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .right {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+}
